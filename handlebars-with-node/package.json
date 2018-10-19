@@ -1,0 +1,24 @@
+{
+  "name": "handlebars-with-node",
+  "version": "1.0.0",
+  "description": "ecommerce with the node js ,mongoose and template engine with handlebars.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prathap1041220272"
+  },
+  "keywords": [
+    "training",
+    "task"
+  ],
+  "author": "konduru siva prathap",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4"
+  }
+}

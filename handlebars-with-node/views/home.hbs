@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>create</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script async src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./home.handlebars">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catlog.handlebars">Catlog's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">details</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="col-md-4 col-md-offset-4">
+                <form method="post" action="/api/catlog" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" class="form-control" id="title" placeholder="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" name="price" class="form-control" id="price" placeholder="price">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Brand</label>
+                        <input type="text" name="brand" class="form-control" id="brand" placeholder="brand">
+                    </div>
+                    <div class="form-group">
+                        <label for="warranty">Warranty</label>
+                        <input type="number" name="warranty" class="form-control" id="warranty" placeholder="warranty">
+                    </div>
+                    <div class="form-group">
+                        <label> Image <input type="file" class="form-control" id="file" name="file"></label>
+                    </div>
+                    <div class="form-group">
+                        <label for="features">Features</label>
+                        <input type="text" name="features" class="form-control" id="features" placeholder="features">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" name="description" id="description" placeholder="description" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                {{title}}
+            </div>
+        </div>
+    </body>
+
+</html>

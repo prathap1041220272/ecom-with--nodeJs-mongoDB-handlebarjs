@@ -12,6 +12,6 @@ var config = {
         port: 5000
     }
 }
-module.exports = function(mode) {
+module.exports = (mode)=> {
     return config[mode || process.argv[2] || 'local'] || config.local;
 }
